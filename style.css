@@ -18,7 +18,7 @@ body{
 }
 
 .wrapper{
-	width:1170px;
+	max-width:1170px;
 	margin:0 auto;
 }
 
@@ -30,7 +30,7 @@ a{
 
 #logo{
 	float:left;
-	margin-top:5px;
+	margin-top:10px;
 	font-size:30px;
 }
 
@@ -49,37 +49,39 @@ a{
 
 #selectmenu{
 	float:left;
-	margin:14px 0 0 250px;
+	margin:15px 0 0 21.6%;
 }
 
+#selectmenu ul{
+	list-style-type:none;
+}
+#selectmenu ul:after{
+	content:'';
+	clear:both;
+}
 #selectmenu li{
-	display:inline-block;
-	/*IE7 <=*/ 
-	//display:inline;
-	//margin:0 40px 0 25px;
-}
-
-#selectmenu li:nth-child(2),
-#selectmenu li:nth-child(3){
+	float:left;
+	
+}	
+#selectmenu-elem-2,
+#selectmenu-elem-3{
 	margin-left:80px;
 }
-
 #selectmenu a{
 	font-size:17px;
 }
 
-#email{
-	float:left;
-	margin:14px 0 0 185px;
-}
-
-.social{
+#contacts{
 	float:right;
-	margin-top:10px;
+	margin-top:15px;
+}
+#email, 
+.social{
+	float:left;
 }
 
-.vk-icon{
-	margin-right:2px;
+.social{	
+	margin-left:15px;
 }
 
 .clear{
@@ -87,10 +89,11 @@ a{
 }
 
 /*main content:h1,about us, more*/
-
+#maincontent{
+	margin-top:60px;
+}
 #portrait-h1{
 	text-align:center;
-	margin-top:90px;
 }
 
 #portrait-h1 h1{
@@ -121,10 +124,6 @@ a{
 	margin-left:11.5%;
 }
 
-#quality{
-	//float:left;
-	//margin-left:150px;
-}
 #shipping{
 	float:right;
 	margin-right:7%;
@@ -214,13 +213,11 @@ a{
 
 #order-form{
 	width:370px;
-	height:390px;
+	min-height:390px;
 	float:left;
-	display:inline-block;
 	margin:48px 0 0 200px;
 	text-align:center;
 	background:rgba(0,0,0,0.4);
-	/*IE <=7*/ //background:black;
 	border-radius:3px;
 	font-weight:bold;
 	color:#fff;
@@ -251,8 +248,6 @@ a{
 	float:left;
 	text-align:left;
 	margin-left:10.5px;
-	/*ie<=7*/
-	//margin-left:6px;
 }
 #name-input,
 #surname-input{
@@ -285,9 +280,6 @@ a{
     height:141px;
     margin-left:1%;
     margin-right:1%;
-		/*ie7*/
-    //float:right;
-    //margin-right:2.5%;
     border:0;
     border-radius:4px;
     resize:none;
@@ -305,7 +297,6 @@ a{
     font-size:16px;
    	font-family: "roboto condensed", sans-serif;
     margin:8px 0 8px 0;
-    /*ie7*/ //margin:5px 0 8px 0;
     letter-spacing: 0.5px;
 }
 
@@ -338,7 +329,7 @@ a{
 	display:inline-block;
 	width:100%;
 	text-align:center;
-	margin-top:30px;
+	margin:60px 0 30px 0;
 	color:#fff;
 }
 
@@ -368,43 +359,15 @@ a{
 	.wrapper{
 		width:100%;
 	}
-	
-	#selectmenu{
-		margin:14px 0 0 20%;
-	}
 
-	#email{
-    	margin: 14px 0 0 15%;
-	}
-
-	.social{
-		margin-right:5px;
-	}
 
 	#images-group{
 		text-align:center;
 	}
 }
-
-@media screen and (max-width:1080px){
-		
+@media screen and (max-width:1110px){
 	#selectmenu{
-		margin:14px 0 0 18%;
-	}
-
-	#email{
-    	margin: 14px 0 0 13%;
-	}
-}
-
-@media screen and (max-width:1020px){
-	
-	#selectmenu{
-		margin:14px 0 0 16%;
-	}
-
-	#email{
-    	margin: 14px 0 0 11%;
+		margin-left: 17%;
 	}
 }
 
@@ -421,13 +384,8 @@ a{
 }
 
 @media screen and (max-width:965px){
-	
 	#selectmenu{
-			margin:14px 0 0 14%;
-		}
-
-	#email{
-    	margin: 14px 0 0 9%;
+		margin-left: 13%;
 	}
 }
 
@@ -447,15 +405,9 @@ a{
 }
 
 @media screen and (max-width:918px){
-	
 	#selectmenu{
-		margin:14px 0 0 10%;
-		}
-
-	#email{
-    	margin: 14px 0 0 6%;
+		margin-left:8%;
 	}
-
 	#fast{
 		margin-left:5%;
 	}
@@ -487,28 +439,19 @@ a{
 		margin-left:1%;
 	}
 
-	#selectmenu{
-		margin:14px 1% 0 0;
-		float:right;
-	}
-
 	#selectmenu a{
 		color:#4b8eae;
 	}
 
+	#selectmenu-elem-2,
+	#selectmenu-elem-3{
+		margin-left:30px;
+
+	}
+	
 	#contacts{
-		display:inline-block;
 		background:#0c0c0c;
-		width:100%;
-	}
-
-	#email{
-    	margin: 8.5px 0 0 1%;
-    	display:inline-block;
-	}
-
-	.social{
-		margin:7px 1% 0 0;
+		float:right;
 	}
 
 	#portrait-h1{
@@ -610,6 +553,37 @@ a{
 		display:inline-block;
 	}
 }
+@media screen and (max-width:726px){
+	#logo,
+	#selectmenu,
+	#contacts{
+		display:block;
+		width:100%;
+		margin:0;
+		float:none;
+	}
+	#selectmenu ul{
+		display:inline-block;	
+		text-align:center;
+	}
+	#selectmenu ul li{
+		margin:0 10px 0 10px;
+	}
+	#contacts{
+		float:left;
+		text-align:center;
+	}
+	#email{
+		float:left;
+		margin-left:4px;
+	}
+	.social{
+		float:right;
+		margin-right:4px;
+	}
+
+}
+
 @media screen and (max-width:562px){
 	#images-group img{
 		width:45%;
@@ -691,13 +665,6 @@ a{
 	#order-form textarea{
 		width:300px;
 	}
-}
-
-@media screen and (max-width:340px){
-	#selectmenu li:nth-child(2), 
-	#selectmenu li:nth-child(3){
-    	margin-left: 60px;
-	}	
 }
 
 @media screen and (max-width:333px){
