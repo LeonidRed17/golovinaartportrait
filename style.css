@@ -1,4 +1,4 @@
-/*>=IE8 - good. IE7 = ok.*/
+
 *{
 	margin:0;
 	padding:0;
@@ -7,13 +7,11 @@
 
 body{
 	font-family: 'Roboto Condensed', sans-serif;
-	/*all ie*/background:black;
 }
 
 #background-image{
 	background:url(images/golovinaart.png) left no-repeat;
 	background-size:cover;
-	/*all IE*/background-position:center;
 	min-height:650px;
 }
 
@@ -174,13 +172,17 @@ a{
 	background:#0c0c0c;
 }
 
-#images-group{
-	display:inline-block;
-	margin:30px 0px 30px 0px;
+/*Images Gallery*/
+.wrapperForImages{
+	float:left;
+	margin:25px 0 0 0;
 }
 
-#images-group img{
-	margin:0.8%;
+.galleryImage{
+    width:270px;
+    height:389px;
+	cursor:zoom-in;
+	margin:0 10px 0 10px;
 }
 
 /*Order section,form,text*/
@@ -319,7 +321,6 @@ a{
 	font-size:16.5px;
 }
 
-
 #last-word{
 	display:inline-block;
 	margin-top:8px;
@@ -356,18 +357,26 @@ a{
 /*Adaptive code*/
 
 @media screen and (max-width:1170px){
-	.wrapper{
-		width:100%;
-	}
-
 
 	#images-group{
-		text-align:center;
+		margin-left:10%;
 	}
 }
 @media screen and (max-width:1110px){
 	#selectmenu{
 		margin-left: 17%;
+	}
+}
+@media screen and (max-width:1060px){
+
+	#images-group{
+		margin-left:8%;
+	}
+}
+@media screen and (max-width:1018px){
+
+	#images-group{
+		margin-left:6%;
 	}
 }
 
@@ -382,16 +391,30 @@ a{
     		margin: 50px 0 0 5%;
 		}
 }
+@media screen and (max-width:978px){
+
+	#images-group{
+		margin-left:4%;
+	}
+}
 
 @media screen and (max-width:965px){
 	#selectmenu{
 		margin-left: 13%;
 	}
 }
+@media screen and (max-width:942px){
+
+	#images-group{
+		margin-left:3%;
+	}
+}
 
 @media screen and (max-width:925px){
 	
-
+	#images-group{
+		margin-left:2%;
+	}
 	#order-form{
 		margin:48px 0 0 10%;
 	}
@@ -416,8 +439,14 @@ a{
 		margin-right:3%;
 	}
 }
-
-
+@media screen and (max-width:887px){
+	#images-group{
+		margin-left:14%;
+	}
+}
+@media screen and (max-width:875px){
+	
+}
 @media screen and (max-width:834px){
 	#portrait-h1{
 		margin-top:50px;
@@ -553,6 +582,11 @@ a{
 		display:inline-block;
 	}
 }
+@media screen and (max-width:753px){
+	#images-group{
+		margin-left:10%;
+	}
+}
 @media screen and (max-width:726px){
 	#logo,
 	#selectmenu,
@@ -583,10 +617,29 @@ a{
 	}
 
 }
-
-@media screen and (max-width:562px){
-	#images-group img{
-		width:45%;
+@media screen and (max-width:680px){
+	#images-group{
+		margin-left:6%;
+	}
+}
+@media screen and (max-width:652px){
+	#images-group{
+		margin-left:4%;
+	}
+}
+@media screen and (max-width:608px){
+	#images-group{
+		margin-left:2%;
+	}
+}
+@media screen and (max-width:591px){
+	#images-group{
+		margin-left:25%;
+	}
+}
+@media screen and (max-width:533px){
+	#images-group{
+		margin-left:20%;
 	}
 }
 
@@ -616,6 +669,16 @@ a{
 	#shipping{
 		width:100%;
 		margin:40px 0 0 0;
+	}
+}
+@media screen and (max-width:449px){
+	#images-group{
+		margin-left:16%;
+	}
+}
+@media screen and (max-width:410px){
+	#images-group{
+		margin-left:12%;
 	}
 }
 
@@ -666,7 +729,11 @@ a{
 		width:300px;
 	}
 }
-
+@media screen and (max-width:350px){
+	#images-group{
+		margin-left:8%;
+	}
+}
 @media screen and (max-width:333px){
 	
 	#name-input, 
@@ -679,5 +746,15 @@ a{
 
 	#order-presentation h2{
 		font-size:30px;
+	}
+}
+@media screen and (max-width:328px){
+	#images-group{
+		margin-left:4%;
+	}
+}
+@media screen and (max-width:316px){
+	#images-group{
+		margin-left:2%;
 	}
 }
